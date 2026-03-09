@@ -36,7 +36,7 @@ public class ClientChunkManagerMixin {
         chunkLookupCount++;
     }
 
-    public static int getAndResetLookupCount() {
+    private static int getAndResetLookupCount() {
         int c = chunkLookupCount;
         chunkLookupCount = 0;
         return c;
